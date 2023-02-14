@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 만국언어 공용사용  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- equiv=equivalant(동등한)
+     호환을 어떻게 할것인가의 내용,  ie의 가장최신버전으로 보여주도록한다 . 
+     만약 크롬브라우저가있다면 크롬부라우저가 웹페이지를 분석하여 보여준다는 의미 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewport의 사이즈를 기기의 사이즈로 맞추고, 기본적인 확대정도는 1 (100%)으로 설정됨 
+     aka 무적권 확대 축소되지 않은 딱 100%의 상태로 상태로 첫화면이 켜짐. -->
+    <meta name="auther" content="부산광역시">
+    <!-- name- 발주준사람이름  -->
+    <meta discription="부산광역시 대표 홈페이지">
+    <!-- 사이트 설명  -->
+    <meta name="keywords" content="부산광역시 부산 부산시청 ">
+    <!-- 검색시 뭐라고 검색하면 나오기를 바라는지 설정하는 필드 -->
+    <meta name="copyright" content="주소">
+    <!-- 사이트의 저작권을 표현하는 핃드 -->
+
+
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>The Join </title>
+</head>
+
+<body>
+    <h2>사용자로부터 입력받기</h2>
+    <div class="첫째">
+        <form action="#">
+            <label for="name">이름</label>
+            <input type="text" id="name" name="my-name" />
+            <!-- 단독테그는 마무리에 꼭 / 를 넣어줍시다. (단독테그=불임)   -->
+            <br /><br />
+            <label for="age">나이</label>
+            <input type="number" id="age" name="my-age" />
+            <br />
+            <br />
+            <button type="submit">제출</button>
+            <button type="reset">초기화</button>
+        </form>
+    </div>
+    <!-- 첫째끝 -->
+
+
+
+    <div class="둘째">
+        <form action="#">
+            <fieldset>
+                <legend>반장</legend>
+                <label for="name">이름</label>
+                <input type="text" id="name" name="name-1">
+                <br />
+                <br />
+
+                <label for="age">나이</label>
+                <input type="text" id="age" name="age1">
+
+
+            </fieldset>
+
+            <fieldset>
+                <legend>부반장</legend>
+                <label for="name2">이름</label>
+                <input type="text" id="name2" name="name-2">
+                <br />
+                <br />
+
+                <label for="age2">나이</label>
+                <input type="text" id="age2" name="age2">
+
+
+            </fieldset>
+        </form>
+    </div>
+    <!-- 둘째끝 -->
+
+
+
+    <div class="셋째">
+        <form action="#">
+            <label for="txt">text</label> 
+            <br/>
+            <br/>
+            <input type="text" id="txt" placeholder="다섯자이하" maxlength="5">
+            <br/>
+            <br/>
+            <label for="pwd">password</label>
+            <br/>
+            <br/>
+            <input type="password" id="pwd" placeholder="4자이상" minlength="4">
+            <br/>
+            <br/>
+            <label for="src">search</label>
+            <input type="text" id="src">
+            <br/>
+            <br/>
+            <button type="submit">제출</button>
+        </form>
+    </div>   
+    <!-- 셋째끝  -->
+<div class="넷째">
+    <label for="num">Number</label>
+    <br/>
+    <br/>
+    <input type="number" id="num" min="0" max="10">
+ <br/>
+    <br/>
+    <label for="rg">range</label>
+    <input type="range" min="0" max="100" step="10"> 
+ <br/>
+    <br/>
+    <label for="dt">Date</label>
+    <input type="date" id="dt" min="2020.01.01" max="2023.12.31">
+</div>
+
+
+
+<div class="다섯째">
+    <h3>메모</h3>
+    <label for="mg">메세지를 입력하시라 이말입니다</label>
+    <br/>
+    <br/>
+    <textarea name="mgs" id="mg" cols="50" rows="10"></textarea>
+                                    <!-- 열         행 -->
+</div>
+
+
+<div class="여섯째">
+<h3>select , option tag </h3>
+<label for="lang">language</label>
+<select name="lang" id="lang">
+    <option value="">--language select</option>
+    <option value="html">html</option>
+    <option value="css">CSS</option>
+    <option value="javaScript">JavaScript</option>
+    <option value="react">react</option>
+</select>
+
+<br>
+<br>
+
+
+<h3>optgroup tag</h3>
+<label for="shopping"> shoppinglist</label>
+<select name="shopping" id="shopping">
+<optgroup label="fruit">
+    <option value="f-a">apple</option>
+    <option value="f-b">banana</option>
+    <option value="f-o">orange</option>
+    <option value="f-g">grape</option>
+    <option value="f-p">pineapple</option>
+</optgroup>
+
+<optgroup label="veggie">
+    <option value="v-c">carrot</option>
+    <option value="v-ca">cabbage</option>
+    <option value="v-s">spinich</option>
+    <option value="v-b">beets</option>
+</optgroup>
+
+<optgroup label="meat">
+<option value="m-b">beef</option>
+<option value="m-p">port</option>
+<option value="m-t">turkey</option>
+<option value="m-c">chicken</option>
+</optgroup>
+
+
+
+</select>
+
+</div>
+
+
+<div class="일곱째">
+<fieldset>sex
+<legend>gender</legend>
+<input type="radio" name="gender">male
+<input type="radio" name="gender">female
+</fieldset>
+
+<fieldset>
+    <legend>지역선택</legend>
+    <input type="radio" name="area" checked="seoul">서울
+    <input type="radio" name="area" >경기
+    <input type="radio" name="area" >부산
+    <input type="radio" name="area" >대구
+    <input type="radio" name="area" >광주
+</fieldset>
+
+<fieldset>
+    <legend>좋아하는과일 여러개 선택</legend>
+    <input type="checkbox" name="fruit" checked>apple
+    <input type="checkbox" name="fruit" >pear
+    <input type="checkbox" name="fruit" >banana
+    <input type="checkbox" name="fruit" >grape
+    <input type="checkbox" name="fruit" >mango
+</fieldset>
+</div>
+</body>
+
+</html>
